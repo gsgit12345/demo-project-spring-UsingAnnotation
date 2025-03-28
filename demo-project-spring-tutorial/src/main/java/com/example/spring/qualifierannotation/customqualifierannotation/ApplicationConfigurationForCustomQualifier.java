@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("com.example.spring.qualifierannotation.customqualifierannotation")
 public class ApplicationConfigurationForCustomQualifier {
 
-    @Bean
+    @Bean("tax")
     public Department taxDepartment()
     {
         return new TaxDepartment();
